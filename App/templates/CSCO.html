@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+    <!-- <link rel="stylesheet" href="./assets/style.css"> -->
+    <link rel="stylesheet" href="../static/css/style3.css"/> 
+
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- The header starts here -->
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-expand-sm navbar-light bg-light justify-content-between">
+                    <a class="navbar-brand h1 goofy_blue" href="/">
+                        <h1></h1>
+                        <i class="fas fa-home"></i>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <form class="form-inline">
+                        <div class="collapse navbar-collapse ul_format" id="navbarNavDropdown">
+                            <ul class="navbar-nav ">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/">
+                                        Home
+                                        <i class="fas fa-newspaper"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Stocks
+                                        <i class="fas fa-chart-line"></i>
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <a class="dropdown-item" href="/CSCO">
+                                            CSCO
+                                            <i class="fas fa-sun"></i>
+                                        </a>
+                                        <a class="dropdown-item" href="/EDU">
+                                            EDU
+                                            <i class="fas fa-tint"></i>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/limitations">
+                                        Limitations
+                                        <i class="fas fa-newspaper"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/about">
+                                       About
+                                        <i class="fas fa-database"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </form>
+                </nav>
+            </div>
+        </div>
+          <div class="row">
+            <div class="col-1" id="sidecolumn_left">
+              <g>
+                <br>
+                <div class="sidetext">
+                </div>
+              </g>
+            </div>
+            <div class="col-10">
+              <br>
+              --------------------------------------------------------------------------------------
+              ----------------------------------------------------------------------------------------
+              ------------------------------Put Chart Here---------------------------------------------------
+              --------------------------------------------------------------------------------------
+              ----------------------------------------------------------------------------------------
+              ---------------------------------------------------------------------------------
+            </div>
+            <div class="col-1">
+              <br>
+              <div class="sidetext">
+               
+              </div>
+            </div>
+            <!--Put Break Here-->
+            <br>
+          </div>
+          <br>
+          <!--Start paragraphs-->
+          <div class="row">
+            <div class="col-1">
+              <!--Margin-->
+            </div>
+            <div class="col-10" id=main_container>
+              <p> 
+                Cisco Systems supplies hardware and software for networking solutions and other communication needs.
+                Cisco is well position in many growing indurstries. First it provides networking solutions for telemedicine.
+                With the coming of Covid-19, many people are opting to see physicians via video and that trend could continue after the pandemic. 
+                Cisco will also support 10% of 5G mobile connections by 2023. 
+                Cisco has also made an effort to imbed more more AI and machine learning into its software. 
+              </p>
+            </div>
+            <div class="col-1">
+              <!--Margin-->
+            </div>
+          </div>
+          <!--Next paragrapg-->
+          <br>
+          <div class="row">
+            <div class="col-1">
+              <!--Margin-->
+            </div>
+            <div class="col-10" id=main_container>
+              <p> 
+                About our prediction
+              </p>
+            </div>
+            <div class="col-1">
+              <!--Margin-->
+            </div>
+            <br><br>
+          </div>
+      
+    <!-- <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 biggest_box">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="white" style="padding: 10px">
+                            <h2>
+                                Renewable Energy Production in the US
+                            </h2>
+                            <hr>
+
+                            <div class="col-lg-12">
+                                <div class="col-lg-3" id="index_sunburst"></div>
+                                    <img class="img-responsive" style="float: left;" src="static/images/sunburst.png" width=200%>
+                                </div>
+
+                                <p class="normal_text"> 
+                                    --------------------------------------------------------------------------------------
+                                    ----------------------------------------------------------------------------------------
+                                    ---------------------------------------------------------------------------------
+
+                                    <br>
+                                    
+                                    <br> --------------------------------------------------------------------------------------
+                                    ----------------------------------------------------------------------------------------
+                                    ---------------------------------------------------------------------------------                                    
+                                    
+                                    <br>
+                                    
+                                    <br> ---------------------------------------------------------------------------------------
+                                    ----------------------------------------------------------------------------------------
+                                    ---------------------------------------------------------------------------------
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="col-md-4 ml-auto">
+                        <div class="white" style="padding: 10px">
+                            <h3>
+                                Visualizations
+                            </h3>
+                            <hr>
+                            <div class="row">
+
+                                <div class="col-lg-6">
+                                    <a href="/hydro" title="">
+                                        <img class="img-responsive" src="static/images/hydro.png" width="100%">
+                                    </a>
+
+                                </div>
+                                <div class="col-lg-6">
+                                    <a href="/solar" title="">
+                                        <img class="img-responsive" src="static/images/solar.png" width="100%">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row">
+
+                                <div class="col-lg-6">
+                                    <a href="/wind" title="">
+                                        <img class="img-responsive" style="float: left;" src="static/images/wind.png" width="100%">
+                                    </a>
+                                </div>
+                                <div class="col-lg-6">
+                                    <a href="/heatmap" title="">
+                                        <img class="img-responsive" style="float: left;" src="static/images/heatmap.png" width="100%">
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div> -->
+
+    <footer class="footer">
+        <div class="container">
+            <span class="text-muted">Page created by James Cadigan, Taurean Hutchinson, Brandon McDermott and Sahr Musa 2020</span>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>

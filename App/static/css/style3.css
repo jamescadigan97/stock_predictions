@@ -1,0 +1,13 @@
+#index_sunburst{
+    box-shadow: 0 0 30px #719ECE;
+    width: 100 px;
+}
+
+.stock_gif {
+    width: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
