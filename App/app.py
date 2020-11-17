@@ -23,15 +23,15 @@ def EDU():
 
     return render_template("EDU.html")
 
-@app.route("/limitations") 
+@app.route("/LSTM") 
 def limitations():
 
-    return render_template("Limitations.html")
+    return render_template("LSTM.html")
 
-@app.route("/about") 
+@app.route("/MVL") 
 def about():
 
-    return render_template("About.html")
+    return render_template("MVL.html")
 
 
 
