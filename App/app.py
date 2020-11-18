@@ -3,7 +3,7 @@ import os
 import pandas as pd
 import numpy as np
 from flask import Flask, render_template, redirect
-
+from csco_prediction import csco1
 
 
 app = Flask(__name__)
@@ -28,10 +28,18 @@ def limitations():
 
     return render_template("LSTM.html")
 
-@app.route("/MVL") 
+@app.route("/train") 
 def about():
 
-    return render_template("MVL.html")
+    return render_template("train.html")
+
+
+@app.route("/predict") 
+def app_code():
+
+    csco1()
+    return render_template("index.html")
+
 
 
 

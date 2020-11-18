@@ -1,8 +1,7 @@
 // Trace1 for the Greek Data
 
-d3.csv("../static/js/Total_CSCO.csv",function(stock_data) {
+d3.csv("../static/js/Total_EDU.csv",function(stock_data) {
   console.log(stock_data)
-
 
   dates = []
   predicted_close = []
@@ -24,7 +23,7 @@ d3.csv("../static/js/Total_CSCO.csv",function(stock_data) {
     x: dates,
     y: actual_close,
     type: "line",
-    name: "CSCO Close",
+    name: "EDU Close",
     line:{
       color: "black"
     }
@@ -34,7 +33,7 @@ d3.csv("../static/js/Total_CSCO.csv",function(stock_data) {
     x: dates,
     y: predicted_close,
     type: "line",
-    name: "CSCO Predicted Close",
+    name: "EDU Predicted Close",
     line:{
       color: "blue"
     }
@@ -44,7 +43,7 @@ d3.csv("../static/js/Total_CSCO.csv",function(stock_data) {
     x: future_dates,
     y: future_prices,
     type: "line",
-    name: "Predicted Future Close",
+    name: "EDU Future Predicted Close",
   };
   console.log(predicted_close)
 
@@ -53,11 +52,11 @@ d3.csv("../static/js/Total_CSCO.csv",function(stock_data) {
   
   // Apply the group barmode to the layout
   var layout = {
-    title: "CSCO Actual Data verus Predicted Data",
+    title: "EDU Actual Data versus Predicted Data",
   };
   
   // Render the plot to the div tag with id "plot"
-  Plotly.newPlot("plot", data, layout);
+  Plotly.newPlot("edu_plot", data, layout);
   
 });
 

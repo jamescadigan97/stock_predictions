@@ -17,6 +17,9 @@ d3.csv("../static/js/edu_csco.csv",function(stock_data) {
     y: Edu,
     type: "line",
     name: "EDU",
+    line:{
+      color: "blue"
+    }
   };
   
   var trace2 = {
@@ -24,6 +27,9 @@ d3.csv("../static/js/edu_csco.csv",function(stock_data) {
     y: Csco,
     type: "line",
     name: "CSCO",
+    line:{
+      color: "black"
+    }
   };
 
   var data = [trace1, trace2];

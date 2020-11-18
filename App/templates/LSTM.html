@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>LSTM</title>
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
     <!-- <link rel="stylesheet" href="./assets/style.css"> -->
     <link rel="stylesheet" href="../static/css/style3.css"/> 
@@ -14,9 +14,8 @@
         <div class="row">
             <div class="col-md-12">
                 <nav class="navbar navbar-expand-sm navbar-light bg-light justify-content-between">
-                    <a class="navbar-brand h1 goofy_blue" href="/">
-                        <h1>Long-Short Term Model</h1>
-                        <i class="fas fa-home"></i>
+                    <a class="navbar-brand h1 goofy_blue">
+                        <h3 >Long Short-Term Model</h3>
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -53,11 +52,17 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="/MVL">
-                                       MVL
+                                    <a class="nav-link" href="/train">
+                                       MVLR
                                         <i class="fas fa-database"></i>
                                     </a>
                                 </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="/predict">
+                                     Predict
+                                      <i class="fas fa-database"></i>
+                                  </a>
+                              </li>
                             </ul>
                         </div>
                     </form>
@@ -70,6 +75,9 @@
               <!--Margin-->
             </div>
             <div class="col-10" id=main_container>
+                <br>
+                <h3>Limitations</h3>
+                <br>
             <!--Images Here-->
             <div class="row">
                 <div class="col-5" id=main_container>
@@ -98,20 +106,18 @@
             </div>
             <div class="col-10">
                 <br>
-                <h3>Limitations</h3>
-                <br>
                 <br>
                 <p>
-                    The LSTM model is a sequential model. It learns a pattern by passing a sequence of models to different nodes
-                    and repeats the process a series of times. The underlying assumption of the LSTM model is that the stock will 
-                    behave like it has in the past. This assumption can be dangerous as making variables can affect its performance
+                    The Long Short-Term (LSTM) model is a sequential model. It learns a pattern by passing a sequence of models to different nodes
+                    and repeats the process a series of times. The underlying assumption of the Long Short-Term model is that the stock will 
+                    behave like it has in the past. This assumption can be dangerous as making variables can affect its performance.
                     First, it does not take into account the underlying health of the company. It disregards the fundementals which 
                     many investors rely on. Secondly, it does not account for news that may affect the company. 
-                    For an example, CSCO recently announced better than expected earnings, but the LSTM model is not 
+                    For an example, Cisco Systems recently announced better than expected earnings, but the LSTM model is not 
                     able to factor in the higher expectations, outside of a higher closing price for one particular day.
                     In addition, major events around the country like the recent presidential election and second increase in
                     COVID-19 cases do not have a direct affect on the model. While the LSTM misses critical aspects predicting
-                the long term preformance in a stock, it is still as a proxy for short term movements based on historical data.
+                the long term preformance in a stock, it is still can serves as a proxy for short term movements based on historical data.
                 </p>
             </div>
             <div class="col-1">
@@ -120,6 +126,36 @@
                
               </div>
             </div>
+            <div class="row">
+                <div class="col-1" id="sidecolumn_left">
+                  <g>
+                    <br>
+                    <div class="sidetext">
+                    </div>
+                  </g>
+                </div>
+                <div class="col-10">
+                    <br>
+                    <h3>Conclusion</h3>
+                    <br>
+                    <p>
+                    The Long-Short Term Model is a starting point in building more advanced models. Given our time
+                    constraint, we were only able to build a single-variate model. While it would still be a sequential model,
+                    model was moving in a particular way. This project has helped us understand that while 
+                    sequencial models are not able to factor in some of the key adding more underlying variables would help us further understand why the 
+                    drivers of a stock's overall movement, they are still useful in helping predicting short-term movements of a stock.
+                    In addition, we do not have a firm stance if Cisco Systems stock price will rise or fall, but we would recommend
+                    buying New Oriental Education (EDU) stock.
+                    </p>
+                </div>
+                <div class="col-1">
+                  <br>
+                  <div class="sidetext">
+                   
+                  </div>
+                </div>
+                <!--Put Break Here-->
+                <br>
             <!--Put Break Here-->
             <br>
           </div> 
