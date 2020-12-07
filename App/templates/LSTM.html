@@ -14,8 +14,9 @@
         <div class="row">
             <div class="col-md-12">
                 <nav class="navbar navbar-expand-sm navbar-light bg-light justify-content-between">
-                    <a class="navbar-brand h1 goofy_blue">
-                        <h3 >Long Short-Term Model</h3>
+                    <a class="navbar-brand h1 goofy_blue" href="/">
+                        <h1></h1>
+                        <i class="fas fa-home"></i>
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -29,22 +30,12 @@
                                         <i class="fas fa-newspaper"></i>
                                     </a>
                                 </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Stocks
-                                        <i class="fas fa-chart-line"></i>
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                        <a class="dropdown-item" href="/CSCO">
-                                            CSCO
-                                            <i class="fas fa-sun"></i>
-                                        </a>
-                                        <a class="dropdown-item" href="/EDU">
-                                            EDU
-                                            <i class="fas fa-tint"></i>
-                                        </a>
-                                    </div>
-                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="/results">
+                                      Forecasts
+                                      <i class="fas fa-newspaper"></i>
+                                  </a>
+                              </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="/LSTM">
                                         LSTM
@@ -52,24 +43,17 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="/train">
-                                       MVLR
+                                    <a class="nav-link" href="/MVL">
+                                       MVL
                                         <i class="fas fa-database"></i>
                                     </a>
                                 </li>
-                                <li class="nav-item">
-                                  <a class="nav-link" href="/predict">
-                                     Predict
-                                      <i class="fas fa-database"></i>
-                                  </a>
-                              </li>
                             </ul>
                         </div>
                     </form>
                 </nav>
             </div>
         </div>
-        
         <div class="row">
             <div class="col-1">
               <!--Margin-->
@@ -116,9 +100,9 @@
                     For an example, Cisco Systems recently announced better than expected earnings, but the LSTM model is not 
                     able to factor in the higher expectations, outside of a higher closing price for one particular day.
                     In addition, major events around the country like the recent presidential election and second increase in
-                    COVID-19 cases do not have a direct affect on the model. While the LSTM misses critical aspects predicting
-                the long term preformance in a stock, it is still can serves as a proxy for short term movements based on historical data.
+                    COVID-19 cases will not immediately have a direct affect on the model.  
                 </p>
+                <br>
             </div>
             <div class="col-1">
               <br>
@@ -135,17 +119,24 @@
                   </g>
                 </div>
                 <div class="col-10">
+                    <h3>Possible Improvements</h3>
+                    <br>
+                    <p>
+                        The Long-Short Term Model is a starting point in building more advanced models. Given the time constraint for the porject
+                        we were only able to build a single-variate model. Building a multivariate model would allow us to factor in more
+                        of the drivers of the stock prices. We could use a multivariate LSTM model. This model would be similar to the one 
+                        we already have, except it is looking at more factors when making its prediction. We could also ultilze a combination 
+                        of mulitple LSTM models and a multivariate linear regression to more accurately predict future stock prices. 
+                        We could forecast the movement of different fundementals using LSTM models and then use a multivariate linear regression to predict
+                        stock prices with the results from the LSTM models.    
+                    </p>
                     <br>
                     <h3>Conclusion</h3>
                     <br>
                     <p>
-                    The Long-Short Term Model is a starting point in building more advanced models. Given our time
-                    constraint, we were only able to build a single-variate model. While it would still be a sequential model,
-                    model was moving in a particular way. This project has helped us understand that while 
-                    sequencial models are not able to factor in some of the key adding more underlying variables would help us further understand why the 
-                    drivers of a stock's overall movement, they are still useful in helping predicting short-term movements of a stock.
-                    In addition, we do not have a firm stance if Cisco Systems stock price will rise or fall, but we would recommend
-                    buying New Oriental Education (EDU) stock.
+                        The Long-Short Term Model is not a perfect tool in forecasting stocks because it isn't able to fully
+                        factor in some of the drivers behind a stock's price, like fundemental analysis, growth catalysts, and unexpected
+                        news headlines. However, it does provide value in helping predict stock prices based on past trends.
                     </p>
                 </div>
                 <div class="col-1">
